@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/api/v1/")
 public class ApiController {
 	
+	
+	
 	//quick setup test
 	@GetMapping("hello/{name}")
 	public ResponseEntity<Map<String, String>> hello(@PathVariable String name, @RequestParam(required = false, defaultValue="Hi there!") String message) {
